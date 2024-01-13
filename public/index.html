@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <link rel="stylesheet" href="../public/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+  class="bg-[url('./images/bg-mobile.png')] md:bg-[url('./images/bg-desktop.png')] bg-no-repeat bg-cover bg-veryDarkBlue font-body">
+  <main>
+    <!-- WRAPPER -->
+    <div class="flex justify-center mt-20 flex-col md:flex-row items-center">
+      <!-- FLYO -->
+      <div class="bg-darkBlue h-78 w-80 rounded-lg rounded-tr-[130px] mb-4 md:mb-0 mr-4">
+        <div>
+          <img src="./images/logo.svg" class="pt-10 pl-10 pr-20" alt="flylo logo">
+        </div>
+        <div>
+          <ul class="flex gap-6 mb-10 pt-10 pl-10">            
+              <li><div class=" p-3 rounded-lg dark:bg-veryDarkBlue h-12 w-12"><img src="./images/icon-document.svg" alt=""></div></li>
+              <li><div class=" p-3 rounded-lg dark:bg-veryDarkBlue h-12 w-12"><img src="./images/icon-folder.svg" alt=""></div></li>
+              <li><div class=" p-3 rounded-lg dark:bg-veryDarkBlue h-12 w-12"><img src="./images/icon-upload.svg" alt=""></div></li>            
+          </ul>
+        </div>
+      </div>
+
+      <!-- Progress bar  -->
+      <div class="bg-darkBlue w-80 h-78 mb-4  mr-4 rounded-xl relative p-4 md:w-2/5 md:h-auto md:mt-7">
+        <p class="text-center text-grayishBlue p-3">You’ve used 815 GB of your storage</p>
+        <div class="mr-8 ml-5  rounded-full dark:bg-veryDarkBlue h-6">
+          <div class="bg-gradient-to-r from-orange-500 to-pink-500  rounded-full h-4 pt-5 " style="width: 85%"></div>
+        </div>
+        <div class="flex justify-between text-grayishBlue mb-12 pt-2 ">
+          <p class="ml-6">0GB</p>
+          <p class="mr-6">1000 GB</p>
+        </div>
+      </div>
+      <!-- white box -->
+      <div class="flex bg-white pr-8 pl-8 pt-6 pb-5 rounded-xl font-bold text-veryDarkBlue absolute mt-96 z-20 md:mt-0 md:top-12  md:ml-[600px] md:pt-2">
+        <p class="text-4xl mt-1">1</p>
+        <p class="text-4xl">8</p>
+        <p class="text-4xl mt-1">5</p>
+        <p class="ml-5 text-grayishBlue text-xl mt-2">GB LEFT</p>
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+  <!-- You’ve used 815 GB of your storage 
+
+  185 GB Left
+
+  0 GB
+  1000 GB-->
+
+</body>
+
+</html>
